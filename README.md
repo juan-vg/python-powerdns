@@ -100,7 +100,7 @@ api.servers[0].delete_zone(zone.name)
 
 **Creation and deletion of DNS records:**
 ```python
-zone = api.server[0].get_zone("test.python-powerdns.domain.tld.")
+zone = api.servers[0].get_zone("test.python-powerdns.domain.tld.")
 
 zone.create_records([
     powerdns.RRSet('a', 'A', [('1.1.1.1', False)]),
